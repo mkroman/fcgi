@@ -12,7 +12,7 @@ module FCGI
     end
     
     def start
-      # Start listening on @port …
+      @socket = TCPServer.new @port
     end
   end
 end
